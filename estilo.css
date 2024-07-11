@@ -1,0 +1,378 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+  }
+  header {
+    background-image: url('fd.png');
+    background-size: cover; /* Faz com que a imagem cubra todo o header */
+    background-position: center; /* Centraliza a imagem no header */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    color: #fff; /* Define a cor do texto como branca para contraste */
+    padding: 50px 0; /* Adiciona espaço interno (padding) ao header */
+    text-align: center; /* Centraliza o texto no header */
+}
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  header {
+    
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    background: url('background-pattern.png') repeat;
+  }
+  .hero-content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  .hero-image img:hover {
+    transform: scale(1.05);
+  }
+  .btn {
+    display: inline-block;
+    background: color: #4a00e0;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .btn:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+  .features {
+    background: #fff;
+    padding: 4rem 0;
+    position: relative;
+  }
+  .features::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #fff;
+    transform: skewY(-3deg);
+  }
+  .feature-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .feature {
+    text-align: center;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  .feature i {
+    font-size: 2.5rem;
+    color: #4a00e0;
+    margin-bottom: 1rem;
+  }
+  .cta, .pricing {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    color: #fff;
+  }
+  .cta h2, .pricing h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .before-after {
+    padding: 4rem 0;
+    background-color: #f0f0f0;
+  }
+  .before-after h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #4a00e0;
+  }
+  .transformation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+  }
+  .transformation {
+    background: #fff;
+    margin-top:15px;
+    gap: 1:
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  .transformation:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  .transformation-images {
+    display: flex;
+  }
+  .transformation-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .transformation-content {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .transformation-content h3 {
+    color: #4a00e0;
+    margin-bottom: 0.5rem;
+  }
+  .pricing-box , .guarantee{
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 2px solid #4a00e0;
+  }
+  .price-tag {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4a00e0;
+    margin-bottom: 1rem;
+  }
+  .pricing {
+    background-image: url('forp.jpeg');
+    background-size: cover; /* Faz com que a imagem cubra toda a seção */
+    background-position: center; /* Centraliza a imagem na seção */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    color: #fff; /* Define a cor do texto como branca para garantir contraste */
+    padding: 50px 20px; /* Adiciona espaçamento interno à seção */
+    text-align: center; /* Centraliza o texto dentro da seção */
+    position: relative; /* Necessário para sobreposições */
+}
+
+.pricing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona uma sobreposição escura com 50% de opacidade */
+    z-index: 1;
+}
+
+.pricing .container {
+    position: relative;
+    z-index: 2; /* Coloca o conteúdo acima da sobreposição */
+}
+.pricing-box img{
+  width: 90%;
+  margin:10px auto;
+  background: #4a00e0;
+  border-radius: 4px;
+}
+.pricing-box h2{
+  color:#4a00e0;
+  font-size: 20px;
+}
+.azul{
+  color:white;
+}
+  .limited-offer {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff416c;
+    margin-bottom: 1.5rem;
+  }
+  .countdown {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  .guarantee {
+    background: #f0f0f0;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .guarantee h3 {
+    color: #4a00e0;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .guarantee p{
+    color: black;
+  }
+  .guarantee img{
+    width: 70%;
+    margin: auto;
+  }
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.preco{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;p
+}
+.hero-content h2{
+  
+  text-align: center;
+  font-size: 25px;
+}
+.hero-content p{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.hero-content a{
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  justify-content: center;
+}
+.modules{
+  text-align: center;
+}
+
+.containerr{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.module{
+  width:calc(95%/2);
+  margin:10px 0;
+  border: 2px solid #4a00e0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+  @media (min-width: 768px) {
+    .hero {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .hero-content {
+      flex: 1;
+      text-align: left;
+      padding-right: 2rem;
+    }
+    .hero-image {
+      flex: 1;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+    }
+    
+    .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .feature-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .transformation-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
